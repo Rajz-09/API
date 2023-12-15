@@ -1,0 +1,5 @@
+<form [formGroup]="facultyForm" (ngSubmit)="add()">
+    Name: <input type="text" formControlName="FacultyName"/><br/>
+    Salary: <input type="text" formControlName="FacultySalary" /><br/>
+    <input [disabled]="!facultyForm.valid" type="submit" />
+</form>

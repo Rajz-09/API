@@ -1,0 +1,7 @@
+<h5>{{ errMsg }}</h5>
+
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+    <input type="text" formControlUsername="Username" placeholder="username"/>
+    <input type="text" formControlPassword="Password" placeholder="password"/>
+    <input type="submit">
+</form>

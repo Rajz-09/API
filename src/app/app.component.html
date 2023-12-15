@@ -1,0 +1,48 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Darshan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="faculty">Faculty</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="faculty/add">Add Faculty</a>
+        </li>
+      </ul>
+    </div>
+    <button routerLink="login" class="btn btn-warning">Login</button>
+    <button (click)="logout()" class="btn btn-warning">Logout</button>
+
+  </nav>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <h3>Sidebar</h3><br/>
+        <p class="text-success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+          quis sint numquam aspernatur possimus. Aliquam, dicta quae! 
+          Laboriosam officia architecto sapiente totam iste alias 
+          laudantium in necessitatibus est. Accusamus, quod!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+          quis sint numquam aspernatur possimus. Aliquam, dicta quae! 
+          Laboriosam officia architecto sapiente totam iste alias 
+          laudantium in necessitatibus est. Accusamus, quod!
+     
+        </p>
+    </div>
+    <div class="col-9" style="min-height:80vh;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<div class="container text-center" id="footer"><h3>Footer</h3></div>
+
+
